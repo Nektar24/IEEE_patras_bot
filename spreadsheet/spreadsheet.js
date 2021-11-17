@@ -7,7 +7,7 @@ const ex = require("../extra/extra-default.json");
 const creds = require("./client_secret.json");
 
 // this is just an id of a spreadsheet, it's not a password or a token.
-const doc = new GoogleSpreadsheet("1SryrmalzCt8KuTd0OgO4dK8QLo9Ku7BAx9Ekb4z0_bg");
+const doc = new GoogleSpreadsheet("1KPW3T0TgeSUPRtf0NeZdYIerXfoX19TV0oL4OCF8IeE");
 
 module.exports.resetSpreadsheet = async function (){
     await doc.useServiceAccountAuth({
