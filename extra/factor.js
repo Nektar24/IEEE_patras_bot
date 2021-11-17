@@ -11,7 +11,7 @@ module.exports = {
             "HR Άτομο που ανέλαβε"              :   extra.hr,
             "Ολοκληρώθηκε (Ναι/Οχι)"            :   extra.completed,
             "Σημειώσεις"                        :   extra.notes,
-            "Ύπαρξη ρόλου Volunteers"            :   this.exists(roles,"Volunteers"),
+            "Ύπαρξη ρόλου Volunteers"           :   this.exists(roles,"Volunteers"),
             "Ύπαρξη ρόλου Observer"             :   this.exists(roles,"Observer"),
             "Ύπαρξη ρόλου Executive Committee"  :   this.exists(roles,"Executive Committee"),
             "Ύπαρξη ρόλου SG Coordinator"       :   this.exists(roles,"SG Coordinator"),
