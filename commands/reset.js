@@ -8,6 +8,6 @@ module.exports = {
         //await message.react('🕒');
         await accessSpreadsheet.resetSpreadsheet();
         //await message.react('👍');
-        await message.delete();
+        
     }
 };
