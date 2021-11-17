@@ -26,6 +26,5 @@ module.exports = {
         fs.writeFile("./data/data.json", JSON.stringify(rows), (err) => { if (err) console.log(err) });
 
         //message.react('👍');
-        message.delete();
     }
 };
