@@ -6,7 +6,7 @@ module.exports = {
             "Discord nickname"                  :   member.user.tag,
             "Chapter"                           :   this.hastheseroles(roles,['EMB Society','PES Society','Computer Society']),
             "Committiees"                       :   this.hastheseroles(roles,['Design','Social','Media','IT','FR','Logistics','HR']),
-            "SG"                                :   " ",
+            "SG"                                :   this.hastheseroles(roles,['Biomedical', 'AI', 'Robotics', 'Programming', 'Competitive', 'Quantum', 'Smart Building', 'Autonomous Vehicle', 'Power Grid', 'Podcast']),
             "Επιλεγμένοι Ρόλοι"                 :   roles,
             "HR Άτομο που ανέλαβε"              :   extra.hr,
             "Ολοκληρώθηκε (Ναι/Οχι)"            :   extra.completed,
