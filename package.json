@@ -2,7 +2,7 @@
   "name": "IEEE_Discord_Bot",
   "version": "1.0.0",
   "description": "Discord Bot that counts members and logs their roles in an exel",
-  "main": "index.js",
+  "main": "IEEE_bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
