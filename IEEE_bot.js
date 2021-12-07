@@ -2,9 +2,9 @@ const Discord = require("discord.js");
 const bot = new Discord.Client;
 const config = require("./config.json");
 const accessSpreadsheet = require("./spreadsheet/spreadsheet.js");
-const factor = require("./extra/factor.js");
+const factor = require("./extras/factor.js");
 const fs = require('fs');
-const extra = require("./extra/extra-default.json");
+const extra = require("./extras/extra-default.json");
 bot.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
@@ -17,6 +17,7 @@ bot.on("warn", (info) => console.log(info));
 bot.on("error", console.error);
 bot.on("ready",()=>{
     console.log("The Bot is online Nek!");
+    //bot.commands.get("log").execute();
 });
 
 bot.on('guildMemberAdd', member => {

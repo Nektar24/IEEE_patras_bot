@@ -1,7 +1,9 @@
+const Discord = require("discord.js");
+const bot = new Discord.Client;
 const fs = require('fs');
 const accessSpreadsheet = require("../spreadsheet/spreadsheet.js");
-const factor = require("../extra/factor.js");
-const extra = require("../extra/extra-default.json");
+const factor = require("../extras/factor.js");
+const extra = require("../extras/extra-default.json");
 const json = require("../data/data.json");
 
 module.exports = {
@@ -10,7 +12,7 @@ module.exports = {
 	permissions : 'admin',
     async execute(message,args) {
 
-        //message.react('🕒');
+        await message.react('🕒');
 
         let rows = {};
     
@@ -25,6 +27,7 @@ module.exports = {
 
         fs.writeFile("./data/data.json", JSON.stringify(rows), (err) => { if (err) console.log(err) });
 
-        //message.react('👍');
+        await message.react('👍');
+        //await message.delete();
     }
 };
